@@ -1,0 +1,2 @@
+- build `npm run build`
+- install clone and from with in the root of the repo run `npm install -g` (no its not published to NPM yet)
