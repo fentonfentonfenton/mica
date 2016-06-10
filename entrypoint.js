@@ -1,3 +1,3 @@
-require('./app/index.js');
+#!/usr/bin/env node
 
-//TODO build and deploy process
+require('./dist/CLI.js');

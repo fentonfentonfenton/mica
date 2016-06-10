@@ -4,16 +4,17 @@
   "description": "Testing framework CLI",
   "main": "entrypoint.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --optional runtime -d dist/ app/"
   },
-  "author": "Max McKenzie",
+  "author": "Max McKenzie max@lemondigits.com",
   "license": "MIT",
   "bin": {
-    "mica": "./app/CLI.js"
+    "mica": "./dist/CLI.js"
   },
   "dependencies": {
     "babel-register": "^6.9.0",
-    "command-line-commands": "^1.0.3"
+    "commander": "^2.9.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
