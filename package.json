@@ -4,17 +4,20 @@
   "description": "Testing framework CLI",
   "main": "entrypoint.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel --optional runtime -d dist/ app/"
+    "test": "NODE_ENV=test mocha --compilers js:babel-core/register --recursive",
+    "build": "babel --optional runtime -d dist/ app/",
+    "local": "npm run build && npm install -g"
   },
   "author": "Max McKenzie max@lemondigits.com",
   "license": "MIT",
   "bin": {
-    "mica": "./dist/CLI.js"
+    "mica": "./dist/index.js"
   },
   "dependencies": {
     "babel-register": "^6.9.0",
-    "commander": "^2.9.0"
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "mocha": "^2.5.3"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
