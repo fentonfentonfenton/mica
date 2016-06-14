@@ -1,14 +1,7 @@
-- build `npm run build`
-- install clone and from with in the root of the repo run `npm install -g` (no its not published to NPM yet)
+- build `npm run local`
+- then type `mica help` for a list of available commands
 
-> random notes that need to live somewhere below
-
-```
-app/
-  - commands/
-  - helpers/
-    - jenkins.js
-    - travisci.js
-  - logger.js
-  - CLI.js
-```
+Docs
+- [commander](http://tj.github.io/commander.js/) used to handle the terminal commands the user enters
+- Terminal Colours https://github.com/Marak/colors.js
+- 

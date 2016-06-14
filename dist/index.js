@@ -15,10 +15,14 @@ var _install2 = _interopRequireDefault(_install);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_commander2.default.version('0.0.1').option('-h, --help', _help2.default);
+_commander2.default.version('0.0.1');
 
 _commander2.default.command('install <cmd>').description('run remote setup commands').action(function (cmd) {
   (0, _install2.default)(cmd);
+});
+
+_commander2.default.command('help').action(function () {
+  (0, _help2.default)();
 });
 
 _commander2.default.parse(process.argv);

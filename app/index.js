@@ -6,14 +6,19 @@ import help from './commands/help';
 import install from './commands/install';
 
 command
-  .version('0.0.1')
-  .option('-h, --help', help);
+  .version('0.0.1');
 
 command
   .command('install <cmd>')
   .description('run remote setup commands')
   .action((cmd) => {
     install(cmd);
+  });
+
+command
+  .command('help')
+  .action(() => {
+    help();
   });
 
 command.parse(process.argv);
