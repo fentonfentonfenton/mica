@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Testing framework CLI",
   "main": "entrypoint.js",
+  "engines" : { 
+    "node" : "5",
+  },
   "scripts": {
     "test": "NODE_ENV=test mocha --compilers js:babel-core/register --recursive",
     "build": "babel --optional runtime -d dist/ app/",
