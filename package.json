@@ -7,7 +7,7 @@
     "node": "5"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive",
+    "test": "npm run build && mocha --compilers js:babel-core/register",
     "build": "babel --optional runtime -d dist/ app/",
     "local": "npm run build && npm install -g"
   },
