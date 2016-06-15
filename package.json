@@ -7,9 +7,9 @@
     "node": "5"
   },
   "scripts": {
-    "test": "npm run build && mocha --compilers js:babel-core/register",
+    "test": "mocha --compilers js:babel-core/register",
     "build": "babel --optional runtime -d dist/ app/",
-    "local": "npm run build && npm install -g"
+    "local": "npm test; npm run build; npm install -g"
   },
   "author": "Max McKenzie max@lemondigits.com",
   "license": "MIT",
@@ -20,7 +20,8 @@
     "babel-register": "^6.9.0",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "simple-git": "^1.37.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",

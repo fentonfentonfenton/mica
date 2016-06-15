@@ -7,7 +7,8 @@ export function help() {
   logger.info('');
   logger.info('');
   logger.info('Mica Commands:'.bold);
-  logger.info('   install <name>: ' + 'creates framework in directory'.dim);
+  logger.info('   install <framework>: ' + 'creates framework in directory'.dim);
+  logger.info('     example: mica install webdriverio'.dim);
   logger.info('   update: ' + 'updates the framework'.dim);
   logger.info('   destroy: ' + 'deletes all files relating to the framework'.dim);
   logger.info('   run: ' + 'run the tests'.dim);
@@ -15,7 +16,7 @@ export function help() {
   logger.info('   cleanup: ' + 'remove all output and log files from your codebase'.dim);
   logger.info('');
   logger.info('Examples:'.bold);
-  logger.info('   mica init (capybara|webdriver|webdriver-angular)');
+  logger.info('   mica init (capybara|webdriverio|webdriverio-angular)');
   logger.info('   mica update');
   logger.info('   mica run');
   logger.info('');

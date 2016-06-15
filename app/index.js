@@ -9,10 +9,10 @@ command
   .version('0.0.1');
 
 command
-  .command('install <cmd>')
+  .command('install <framework>')
   .description('run remote setup commands')
-  .action((cmd) => {
-    install(cmd);
+  .action((framework) => {
+    install(framework);
   });
 
 command

@@ -17,8 +17,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _commander2.default.version('0.0.1');
 
-_commander2.default.command('install <cmd>').description('run remote setup commands').action(function (cmd) {
-  (0, _install2.default)(cmd);
+_commander2.default.command('install <framework>').description('run remote setup commands').action(function (framework) {
+  (0, _install2.default)(framework);
 });
 
 _commander2.default.command('help').action(function () {
