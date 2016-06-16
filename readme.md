@@ -15,4 +15,5 @@ https://github.com/airbnb/javascript
 # Docs and Dependacies
 - [commander](http://tj.github.io/commander.js/) used to handle the terminal commands the user enters
 - [Terminal Colours](https://github.com/Marak/colors.js)
-- - [simple git](https://www.npmjs.com/package/simple-git)
+- [simple git](https://www.npmjs.com/package/simple-git)
+- [shelljs](https://github.com/shelljs/shelljs)
