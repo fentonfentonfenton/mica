@@ -9,7 +9,8 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
     "build": "babel --optional runtime -d dist/ app/",
-    "local": "npm test; npm run build; npm install -g"
+    "local": "npm test; npm run build; npm install -g",
+    "postinstall": "mica environment-check"
   },
   "author": "Max McKenzie max@lemondigits.com",
   "license": "MIT",
@@ -21,6 +22,7 @@
     "colors": "^1.1.2",
     "commander": "^2.9.0",
     "mocha": "^2.5.3",
+    "shelljs": "^0.7.0",
     "simple-git": "^1.37.0"
   },
   "devDependencies": {
