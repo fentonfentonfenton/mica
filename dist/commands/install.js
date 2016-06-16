@@ -20,13 +20,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function install(framework) {
   switch (framework) {
     default:
-      _logger2.default.error('please select a framework (capybara|webdriver|angular)');
+      _logger2.default.error('please select a framework (capybara|webdriverio|webdriverio-angular)');
       break;
     case 'capybara':
-      _logger2.default.info('capybara');
+      _logger2.default.info('capybara not yet supported');
       break;
     case 'webdriverio':
-      _logger2.default.info('installing webdriverio');
+      _logger2.default.info('installing webdriverio'.green);
       (0, _webdriverio2.default)();
       break;
   }

@@ -9,13 +9,13 @@ var _simpleGit = require('simple-git');
 
 var _simpleGit2 = _interopRequireDefault(_simpleGit);
 
+var _logger = require('../logger');
+
+var _logger2 = _interopRequireDefault(_logger);
+
 var _createRcFile = require('./createRcFile');
 
 var _createRcFile2 = _interopRequireDefault(_createRcFile);
-
-var _fs = require('fs');
-
-var _fs2 = _interopRequireDefault(_fs);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27,7 +27,8 @@ function webdriverio() {
     stderr.pipe(process.stderr);
   }).clone(repoURL, './test');
 
-  (0, _createRcFile2.default)('webdriverio');
+  (0, _createRcFile2.default)('webdriverio', './test/run.js');
+  _logger2.default.info('.micarc file created'.green);
 }
 
 module.exports = webdriverio;

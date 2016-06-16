@@ -15,8 +15,8 @@ var _fs2 = _interopRequireDefault(_fs);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function createRcFile(framework) {
-  _fs2.default.writeFile('./.micarc', '{"framework": "' + framework + '"}', function (err) {
+function createRcFile(framework, run) {
+  _fs2.default.writeFile('./.micarc', '{"framework": "' + framework + '", "run": "' + run + '"}', function (err) {
     if (err) {
       return _logger2.default.info(err);
     }
