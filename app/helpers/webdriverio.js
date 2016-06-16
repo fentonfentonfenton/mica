@@ -1,6 +1,6 @@
 import git from 'simple-git';
+import logger from '../logger';
 import createRcFile from './createRcFile';
-import fs from 'fs';
 
 export function webdriverio() {
   const repoURL = 'https://github.com/maxmckenzie/cucumber-submodule';
@@ -13,6 +13,7 @@ export function webdriverio() {
     .clone(repoURL, './test');
 
   createRcFile('webdriverio');
+  logger.info('.micarc file created'.green);
 }
 
 module.exports = webdriverio;
