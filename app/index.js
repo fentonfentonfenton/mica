@@ -4,12 +4,13 @@ import command from 'commander';
 
 import help from './commands/help';
 import install from './commands/install';
+import environmentCheck from './helper/environmentCheck';
 
 command
   .version('0.0.1');
 
 command
-  .command('install <framework>')
+  .command('install [framework]')
   .description('run remote setup commands')
   .action((framework) => {
     install(framework);
@@ -19,6 +20,12 @@ command
   .command('help')
   .action(() => {
     help();
+  });
+
+command
+  .command('environment-check')
+  .action(() => {
+    environmentCheck();
   });
 
 command.parse(process.argv);
