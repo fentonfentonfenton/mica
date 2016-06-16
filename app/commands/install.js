@@ -9,7 +9,7 @@ export function install(framework) {
       logger.error('please select a framework (capybara|webdriverio|webdriverio-angular)');
       break;
     case 'capybara':
-      logger.info('capybara');
+      logger.info('capybara not yet supported');
       break;
     case 'webdriverio':
       logger.info('installing webdriverio'.green);
