@@ -8,6 +8,26 @@
 - build `npm run local`
 - then type `mica help` for a list of available commands
 
+```
+Mica Commands:
+
+   install <framework>: creates framework in directory
+     example: mica install webdriverio
+   environment-check: check for essential local dependencies
+   update: updates the framework
+   destroy: deletes all files relating to the framework
+   run: run the tests
+   watch: watch for file changes in the directory and re-test
+   cleanup: remove all output and log files from your codebase
+
+Currently Implemented:
+
+   mica install webdriverio
+   mica environment-check
+   mica help
+   mica run
+```
+
 # Coding Standards
 
 https://github.com/airbnb/javascript

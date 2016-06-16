@@ -20,7 +20,7 @@ function createRcFile(framework, run) {
     if (err) {
       return _logger2.default.info(err);
     }
-    _logger2.default.info('The file was saved!');
+    _logger2.default.info('The .micarc file was saved!');
   });
 }
 

@@ -6,7 +6,7 @@ export function createRcFile(framework, run) {
     if (err) {
       return logger.info(err);
     }
-    logger.info('The file was saved!');
+    logger.info('The .micarc file was saved!');
   });
 }
 
