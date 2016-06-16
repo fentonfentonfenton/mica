@@ -9,6 +9,8 @@ var _simpleGit = require('simple-git');
 
 var _simpleGit2 = _interopRequireDefault(_simpleGit);
 
+var _shelljs = require('shelljs');
+
 var _logger = require('../logger');
 
 var _logger2 = _interopRequireDefault(_logger);

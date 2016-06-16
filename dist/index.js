@@ -17,16 +17,25 @@ var _environmentCheck = require('./helpers/environmentCheck');
 
 var _environmentCheck2 = _interopRequireDefault(_environmentCheck);
 
+var _run = require('./commands/run');
+
+var _run2 = _interopRequireDefault(_run);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _commander2.default.version('0.0.1');
 
-_commander2.default.command('install [framework]').description('run remote setup commands').action(function (framework) {
+_commander2.default.command('install [framework]').action(function (framework) {
   (0, _install2.default)(framework);
 });
 
 _commander2.default.command('help').action(function () {
   (0, _help2.default)();
+});
+
+_commander2.default.command('run').action(function () {
+  (0, _environmentCheck2.default)();
+  (0, _run2.default)();
 });
 
 _commander2.default.command('environment-check').action(function () {

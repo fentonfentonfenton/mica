@@ -5,6 +5,7 @@ import command from 'commander';
 import help from './commands/help';
 import install from './commands/install';
 import environmentCheck from './helpers/environmentCheck';
+import run from './commands/run';
 
 command
   .version('0.0.1');
@@ -19,6 +20,13 @@ command
   .command('help')
   .action(() => {
     help();
+  });
+
+command
+  .command('run')
+  .action(() => {
+    environmentCheck();
+    run();
   });
 
 command
