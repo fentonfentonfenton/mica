@@ -9,8 +9,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
     "build": "babel --optional runtime -d dist/ app/",
-    "local": "npm test; npm run build; npm install -g",
-    "postinstall": "mica environment-check"
+    "local": "npm test; npm run build; npm install -g"
   },
   "author": "Max McKenzie max@lemondigits.com",
   "license": "MIT",
