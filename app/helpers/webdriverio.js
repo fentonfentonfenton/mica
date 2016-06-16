@@ -1,4 +1,5 @@
 import git from 'simple-git';
+import { exec } from 'shelljs';
 import logger from '../logger';
 import createRcFile from './createRcFile';
 
@@ -12,7 +13,7 @@ export function webdriverio() {
     })
     .clone(repoURL, './test');
 
-  createRcFile('webdriverio');
+  createRcFile('webdriverio', './test/run.js');
   logger.info('.micarc file created'.green);
 }
 

@@ -1,8 +1,8 @@
 import logger from '../logger';
 import fs from 'fs';
 
-export function createRcFile(framework) {
-  fs.writeFile('./.micarc', `{"framework": "${framework}"}`, function (err) {
+export function createRcFile(framework, run) {
+  fs.writeFile('./.micarc', `{"framework": "${framework}", "run": "${run}"}`, function (err) {
     if (err) {
       return logger.info(err);
     }
